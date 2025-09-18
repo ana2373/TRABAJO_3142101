@@ -5,28 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <title>Obras Clásicas</title>
-  <style>
-    /* Menú flotante a la derecha */
-    .menu-derecha {
-      position: fixed;
-      top: 100px;  /* espacio desde arriba */
-      right: 20px; /* espacio desde la derecha */
-      width: 250px; /* ancho del menú */
-      z-index: 1000; /* siempre encima */
-    }
-
-    /* Margen al contenido para que no lo tape el menú */
-    .contenido {
-      margin-right: 280px; 
-    }
-  </style>
 </head>
 <body>
+
   <!-- Contenido principal -->
-  <div class="contenido">
-    <div class="bg-dark text-white p-3 mb-3 text-center">
+  <div style="margin-right: 300px; padding: 20px;">
+    <div style="background-color:#212529; color:#fff; padding:20px; margin-bottom:20px; text-align:center; border-radius:10px;">
       <h1>OBRAS CLÁSICAS</h1>
-      <h4>Johann Sebastian Bach (1685–1750) – Barroco</h4>
+      <h4>:contentReference[oaicite:0]{index=0} (1685–1750) – Barroco</h4>
       <p>Considerado el “Padre de la música”. Bach escribió obras que son la base de la música clásica.</p>
       <p><b>Conciertos de Brandeburgo (1721):</b> colección de 6 conciertos orquestales con gran variedad de estilos y técnicas.</p>
       <p><b>Misa en si menor (1749):</b> una de las misas más completas y monumentales de la historia.</p>
@@ -35,16 +21,16 @@
       <p><b>Tocata y fuga en re menor (BWV 565):</b> pieza para órgano, una de las más reconocidas y dramáticas.</p>
     </div>
 
-    <div class="bg-dark text-white p-3 mb-3 text-center">
-      <h4>Antonio Vivaldi (1678–1741) – Barroco</h4>
+    <div style="background-color:#212529; color:#fff; padding:20px; margin-bottom:20px; text-align:center; border-radius:10px;">
+      <h4>:contentReference[oaicite:1]{index=1} (1678–1741) – Barroco</h4>
       <p>El “cura rojo” veneciano fue uno de los grandes maestros del concierto.</p>
       <p><b>Las cuatro estaciones (1725):</b> cuatro conciertos para violín que representan primavera, verano, otoño e invierno.</p>
       <p><b>Conciertos para violín Op. 8:</b> serie de conciertos llenos de virtuosismo.</p>
       <p><b>Gloria en re mayor (RV 589):</b> obra sacra coral-orquestal muy interpretada.</p>
     </div>
 
-    <div class="bg-dark text-white p-3 mb-3 text-center">
-      <h4>Wolfgang Amadeus Mozart (1756–1791) – Clasicismo</h4>
+    <div style="background-color:#212529; color:#fff; padding:20px; margin-bottom:20px; text-align:center; border-radius:10px;">
+      <h4>:contentReference[oaicite:2]{index=2} (1756–1791) – Clasicismo</h4>
       <p>Niño prodigio, compuso más de 600 obras en apenas 35 años.</p>
       <p><b>Sinfonía n.º 40 en sol menor (1788):</b> una de sus sinfonías más intensas y emocionales.</p>
       <p><b>Réquiem en re menor (1791):</b> su última obra, inconclusa, cargada de dramatismo.</p>
@@ -54,15 +40,26 @@
     </div>
   </div>
 
-  <!-- Menú lateral -->
-      <div class="col-2 bg-light border-start shadow p-3">
-        <h3 class="bg-dark text-white p-2 text-center rounded">Menú</h3>
-        <ul class="list-unstyled mt-3">
-          <li><a href="index.html" class="text-dark d-block py-2">Inicio</a></li>
-          <li><a href="compositores.html" class="text-dark d-block py-2">Compositores Famosos</a></li>
-          <li><a href="obras.html" class="text-dark d-block py-2">Obras Famosas</a></li>
-        </ul>
-      </div>
+  <!-- Menú lateral derecho fijo -->
+  <div style="
+    position:fixed;
+    top:100px;
+    right:20px;
+    width:250px;
+    background-color:#f8f9fa;
+    border-left:1px solid #ddd;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    padding:20px;
+    border-radius:10px;
+  ">
+    <h3 style="background-color:#212529; color:#fff; padding:10px; text-align:center; border-radius:10px;">Menú</h3>
+    <ul style="list-style:none; padding:0; margin-top:20px;">
+      <li><a href="index.html" style="display:block; padding:10px; color:#000; text-decoration:none;">Inicio</a></li>
+      <li><a href="compositores.html" style="display:block; padding:10px; color:#000; text-decoration:none;">Compositores Famosos</a></li>
+      <li><a href="obras.html" style="display:block; padding:10px; color:#000; text-decoration:none;">Obras Famosas</a></li>
+    </ul>
+  </div>
+
   <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
