@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <title>Obras Clásicas</title>
+  <style>
+    /* Menú flotante a la derecha */
+    .menu-derecha {
+      position: fixed;
+      top: 100px;  /* espacio desde arriba */
+      right: 20px; /* espacio desde la derecha */
+      width: 250px; /* ancho del menú */
+      z-index: 1000; /* siempre encima */
+    }
+
+    /* Margen al contenido para que no lo tape el menú */
+    .contenido {
+      margin-right: 280px; 
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenido principal -->
+  <div class="contenido">
+    <div class="bg-info text-white p-3 mb-3 text-center">
+      <h1>OBRAS CLÁSICAS</h1>
+      <h4>Johann Sebastian Bach (1685–1750) – Barroco</h4>
+      <p>Considerado el “Padre de la música”. Bach escribió obras que son la base de la música clásica.</p>
+      <p><b>Conciertos de Brandeburgo (1721):</b> colección de 6 conciertos orquestales con gran variedad de estilos y técnicas.</p>
+      <p><b>Misa en si menor (1749):</b> una de las misas más completas y monumentales de la historia.</p>
+      <p><b>El arte de la fuga:</b> obra en la que explora a fondo las posibilidades del contrapunto.</p>
+      <p><b>El clave bien temperado (1722 y 1742):</b> dos volúmenes de preludios y fugas en todos los tonos.</p>
+      <p><b>Tocata y fuga en re menor (BWV 565):</b> pieza para órgano, una de las más reconocidas y dramáticas.</p>
+    </div>
+
+    <div class="bg-info text-white p-3 mb-3 text-center">
+      <h4>Antonio Vivaldi (1678–1741) – Barroco</h4>
+      <p>El “cura rojo” veneciano fue uno de los grandes maestros del concierto.</p>
+      <p><b>Las cuatro estaciones (1725):</b> cuatro conciertos para violín que representan primavera, verano, otoño e invierno.</p>
+      <p><b>Conciertos para violín Op. 8:</b> serie de conciertos llenos de virtuosismo.</p>
+      <p><b>Gloria en re mayor (RV 589):</b> obra sacra coral-orquestal muy interpretada.</p>
+    </div>
+
+    <div class="bg-info text-white p-3 mb-3 text-center">
+      <h4>Wolfgang Amadeus Mozart (1756–1791) – Clasicismo</h4>
+      <p>Niño prodigio, compuso más de 600 obras en apenas 35 años.</p>
+      <p><b>Sinfonía n.º 40 en sol menor (1788):</b> una de sus sinfonías más intensas y emocionales.</p>
+      <p><b>Réquiem en re menor (1791):</b> su última obra, inconclusa, cargada de dramatismo.</p>
+      <p><b>Pequeña serenata nocturna (1787):</b> serenata ligera para cuerdas, muy popular.</p>
+      <p><b>Las bodas de Fígaro (1786):</b> ópera cómica con crítica social.</p>
+      <p><b>La flauta mágica (1791):</b> ópera cargada de simbolismo masónico y fantasía.</p>
+    </div>
+  </div>
+
+  <!-- Menú lateral flotante -->
+  <div class="menu-derecha">
+    <h3 class="bg-dark text-white p-3 text-center">Menú</h3>
+    <ul class="list-unstyled p-3 bg-light border rounded">
+      <li><a href="index.html" class="text-dark">Inicio</a></li>
+      <li><a href="compositores.html" class="text-dark">Compositores Famosos</a></li>
+      <li><a href="obras_principales.html" class="text-dark">Obras Famosas</a></li>
+    </ul>
+  </div>
+
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
